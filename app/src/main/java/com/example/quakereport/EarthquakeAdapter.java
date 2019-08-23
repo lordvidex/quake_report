@@ -54,6 +54,7 @@ public class EarthquakeAdapter extends ArrayAdapter<Earthquake> {
         locationPrimary.setText(primaryLocation);
 
         //Third textView containing the date of the earthquake
+        TextView fame = (TextView) listView.findViewById(R.id.invisible);
         TextView date = listView.findViewById(R.id.txt_earthQuakeDate);
         date.setText(currentEarthQuake.getmEarthQuakeDate());
 
