@@ -41,6 +41,13 @@ import java.util.Date;
          * parsing a JSON response.
          */
         public static ArrayList<Earthquake> extractEarthquakes(String stringUrl) {
+            Log.i(LOG_TAG,"TEST: QueryUtils function extractEarthQuake() called...");
+            //Create a thread to sleep the system for 2000 milliseconds
+            try {
+                Thread.sleep(2000);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
             //Create URL
             URL url = createUrl(stringUrl);
             //Perform HTTP Request

@@ -2,7 +2,9 @@ package com.example.quakereport;
 
 import android.content.AsyncTaskLoader;
 import android.content.Context;
+import android.util.Log;
 import java.util.List;
+import static com.example.quakereport.QueryUtils.LOG_TAG;
 
 public class EarthquakeLoader extends AsyncTaskLoader<List<Earthquake>> {
     //instantiate a private String to hold the URL
@@ -20,11 +22,13 @@ public class EarthquakeLoader extends AsyncTaskLoader<List<Earthquake>> {
 
     @Override
     protected void onStartLoading() {
+        Log.i(LOG_TAG,"TEST: onStartLoading() called...");
         forceLoad();
     }
 
     @Override
     public List<Earthquake> loadInBackground() {
+        Log.i(LOG_TAG,"TEST: loadInBackground() called...");
         if(mUrl==null){
             return null;
         }
