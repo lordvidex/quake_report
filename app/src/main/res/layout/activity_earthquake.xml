@@ -3,13 +3,17 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
+    android:background="#dddddd"
     xmlns:tools="http://schemas.android.com/tools">
 <ListView
     android:orientation= "vertical"
     android:id="@+id/listView"
     android:layout_width="match_parent"
-    android:dividerHeight="0dp"
+    android:layout_marginStart="16dp"
+    android:layout_marginEnd="16dp"
+    android:dividerHeight="10dp"
     android:divider="@null"
+    android:scrollbars="none"
     android:layout_height="match_parent" />
 <TextView
     android:layout_width="wrap_content"
